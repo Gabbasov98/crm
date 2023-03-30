@@ -1,0 +1,1795 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Панель управления</title>
+</head>
+
+<body class="page">
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="sidebar__top">
+    <a href="" class="sidebar__logo">
+        <img src="img/logo.webp" alt="">
+    </a>
+    <a href="" class="sidebar__logout">
+        <img src="img/logout.webp" alt="">
+    </a>
+    <a href="" class="sidebar__note">
+        <img src="img/note.webp" alt="">
+        <span class="sidebar__note-num">1</span>
+    </a>
+    <a href="" class="sidebar__calendar">
+        <img src="img/calendar.webp" alt="">
+    </a>
+    <button class="burger"></button>
+</div>
+<nav class="nav">
+    <div class="nav__item">
+        <a href="" class="nav__link">
+            <i class="nav__icon">
+                <img src="img/user.webp" alt="">
+            </i>
+            <span>Клиенты</span>
+        </a>
+    </div>
+    <div class="nav__item">
+        <a href="" class="nav__link">
+            <i class="nav__icon">
+                <img src="img/settings.webp" alt="">
+            </i>
+            <span>Панель управления</span>
+        </a>
+    </div>
+    <div class="nav__item">
+        <div class="nav__show">
+            <i class="nav__icon">
+                <img src="img/shield.webp" alt="">
+            </i>
+            <span>Верификация</span>
+            <img src="img/arrow.webp" alt="" class="nav__arrow">
+        </div>
+        <div class="nav__hidden">
+            <div class="nav__sublinks">
+                <a href="" class="nav__sublink _active">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Верификация2</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="nav__item">
+        <div class="nav__show">
+            <i class="nav__icon">
+                <img src="img/marketing.webp" alt="">
+            </i>
+            <span>Маркетинг</span>
+            <img src="img/arrow.webp" alt="" class="nav__arrow">
+        </div>
+        <div class="nav__hidden">
+            <div class="nav__sublinks">
+                <a href="" class="nav__sublink _active">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Кампания</span>
+                </a>
+                <a href="" class="nav__sublink">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Лендинги</span>
+                </a>
+                <a href="" class="nav__sublink">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Отчет</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="nav__item">
+        <a href="" class="nav__link">
+            <i class="nav__icon">
+                <img src="img/banking.webp" alt="">
+            </i>
+            <span>Банкинг</span>
+        </a>
+    </div>
+    <div class="nav__item">
+        <div class="nav__show">
+            <i class="nav__icon">
+                <img src="img/account.webp" alt="">
+            </i>
+            <span>Аккаунты</span>
+            <img src="img/arrow.webp" alt="" class="nav__arrow">
+        </div>
+        <div class="nav__hidden">
+            <div class="nav__sublinks">
+                <a href="" class="nav__sublink _active">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Аккаунты 2</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="nav__item">
+        <a href="" class="nav__link">
+            <i class="nav__icon">
+                <img src="img/referal.webp" alt="">
+            </i>
+            <span>Рефералка</span>
+        </a>
+    </div>
+</nav>
+
+<!--Банкинг-->
+<!--Аккаунты-->
+
+        </aside>
+        <main class="content">
+
+            <div class="breadcrumbs">
+                <span class="breadcrumbs__item">Панель управления</span>
+            </div>
+
+            <div class="wrap dashboard">
+                <div class="wrap__scroll">
+                    <div class="filter">
+    <a href="" class="filter__btn m-btn m-btn-primary">
+        <span>Все</span>
+    </a>
+    <div class="filter__group">
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Предыдущий год</span>
+        </a>
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Этот год</span>
+        </a>
+    </div>
+    <div class="filter__group">
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Предыдущий месяц</span>
+        </a>
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Этот месяц</span>
+        </a>
+    </div>
+    <div class="filter__group">
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Предыдущая неделя</span>
+        </a>
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Эта неделя</span>
+        </a>
+    </div>
+    <div class="filter__group">
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Вчера</span>
+        </a>
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Сегодня</span>
+        </a>
+    </div>
+    <button class="date-btn">
+        <img src="img/calendar2.png" alt="">
+        <span>Выбрать дату периода</span>
+        <input class="date-input" type="text">
+    </button>
+</div>
+
+
+                    <div class="banking-fields">
+                        <fieldset class="fg">
+                            <input type="text" placeholder="ID Клиента, Имя, Телефон, Email">
+                        </fieldset>
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Офис</option>
+        <option>Офис</option>
+        <option>Офис 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Кампания</option>
+        <option>Кампания</option>
+        <option>Кампания 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Команда</option>
+        <option>Команда</option>
+        <option>Команда 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Страна</option>
+        <option>Страна</option>
+        <option>Страна 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Сайт</option>
+        <option>Сайт</option>
+        <option>Сайт 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Статус</option>
+        <option>Активный</option>
+        <option>Пассивный</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Менеджер</option>
+        <option>Менеджер</option>
+        <option>Менеджер 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Конв. Менеджер</option>
+        <option>Конв. Менеджер</option>
+        <option>Конв. Менеджер 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Менеджер Розн. торг.</option>
+        <option>Менеджер Розн. торг.</option>
+        <option>Менеджер Розн. торг. 2</option>
+    </select>
+</fieldset>
+
+                    </div>
+
+                    <div class="banking-fields__buttons">
+                        <button class="banking-fields__btn m-btn m-btn-primary">
+                            <span>Применить выбранные фильтры</span>
+                        </button>
+                        <button class="banking-fields__btn m-btn m-btn-primary-outline">
+                            <img src="img/refresh.webp" alt="">
+                            <span>Сбросить фильтры</span>
+                        </button>
+                    </div>
+
+                    <div class="banking-nums">
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        0
+    </div>
+    <div class="stat-card__title gray-text">
+        Новые лиды
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat9.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        0
+    </div>
+    <div class="stat-card__title gray-text">
+        Депозиты
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat10.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        $ 0
+    </div>
+    <div class="stat-card__title gray-text">
+        Выводы
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat11.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        $ 0
+    </div>
+    <div class="stat-card__title gray-text">
+        Чистый депозит
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat12.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        $ 0
+    </div>
+    <div class="stat-card__title gray-text">
+        Итоговый баланс
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat5.png" alt="">
+    </div>
+</div>
+
+                    </div>
+
+                    <div class="dashboard-data">
+                        <div class="m-table__content">
+    <div class="dashboard-data__top">
+        <div class="text12">
+            Последние Депозиты
+        </div>
+    </div>
+    <div class="dashboard-data__table m-table">
+        <table>
+            <thead>
+            <tr>
+                <th colspan="4"></th>
+                <th colspan="4">
+                    <div class="th">
+                        <span class="th__title">
+                            Последняя продажа
+                        </span>
+                    </div>
+                </th>
+                <th colspan="2">
+                    <div class="th">
+                        <span class="th__title">
+                            Запрос на вывод средств
+                        </span>
+                    </div>
+                </th>
+                <th colspan="2">
+                    <div class="th">
+                        <span class="th__title">
+                            Снятие обработано
+                        </span>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>
+    <div class="th">
+        <span class="th__title">
+            ID
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            Имя клиента
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            Ответственный Тим Лид 
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            Сумма
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            ID
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            Имя клиента
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            Ответственный Тим Лид 
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            Сумма
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            ID
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            Сумма
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            ID
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            Сумма
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67931
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Andrey Skobkov
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Serg1 Serg2
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            107.9
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Александр Григорьев 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            RM Zahar Zahar 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67952
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            20
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+</tr>
+
+            <tr>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67931
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Andrey Skobkov
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Serg1 Serg2
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            107.9
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Александр Григорьев 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            RM Zahar Zahar 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67952
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            20
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+</tr>
+
+            <tr>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67931
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Andrey Skobkov
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Serg1 Serg2
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            107.9
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Александр Григорьев 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            RM Zahar Zahar 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67952
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            20
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+</tr>
+
+            <tr>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67931
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Andrey Skobkov
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Serg1 Serg2
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            107.9
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Александр Григорьев 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            RM Zahar Zahar 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67952
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            20
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+</tr>
+
+            <tr>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67931
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Andrey Skobkov
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Serg1 Serg2
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            107.9
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Александр Григорьев 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            RM Zahar Zahar 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67952
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            20
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+</tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="m-table__bottom">
+    <div class="text12 dark-text">
+        Показать 1 по 4 с 333
+    </div>
+    <div class="pagination">
+        <button class="pagination__btn">
+            <img src="img/prev.webp" alt="">
+        </button>
+        <div class="pagination__nums">
+            <button class="pagination__num _active">
+                <span>1</span>
+            </button>
+            <button class="pagination__num">
+                <span>2</span>
+            </button>
+            <button class="pagination__num">
+                <span>3</span>
+            </button>
+            <button class="pagination__num">
+                <span>4</span>
+            </button>
+            <button class="pagination__num">
+                <span>5</span>
+            </button>
+            <button class="pagination__num">
+                <span>23</span>
+            </button>
+        </div>
+        <button class="pagination__btn">
+            <img src="img/next.webp" alt="">
+        </button>
+    </div>
+</div>
+
+</div>
+
+                    </div>
+                    <div class="dashboard-data">
+                        <div class="m-table__content">
+    <div class="dashboard-data__top">
+        <div class="text12">
+            Последние Выводы
+        </div>
+    </div>
+    <div class="dashboard-data__table m-table">
+        <table>
+            <thead>
+            <tr>
+                <th colspan="4"></th>
+                <th colspan="4">
+                    <div class="th">
+                        <span class="th__title">
+                            Последняя продажа
+                        </span>
+                    </div>
+                </th>
+                <th colspan="2">
+                    <div class="th">
+                        <span class="th__title">
+                            Запрос на вывод средств
+                        </span>
+                    </div>
+                </th>
+                <th colspan="2">
+                    <div class="th">
+                        <span class="th__title">
+                            Снятие обработано
+                        </span>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>
+    <div class="th">
+        <span class="th__title">
+            ID
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            Имя клиента
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            Ответственный Тим Лид 
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            Сумма
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            ID
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            Имя клиента
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            Ответственный Тим Лид 
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            Сумма
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            ID
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            Сумма
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            ID
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                <th>
+    <div class="th">
+        <span class="th__title">
+            Сумма
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67931
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Andrey Skobkov
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Serg1 Serg2
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            107.9
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Александр Григорьев 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            RM Zahar Zahar 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67952
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            20
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+</tr>
+
+            <tr>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67931
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Andrey Skobkov
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Serg1 Serg2
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            107.9
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Александр Григорьев 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            RM Zahar Zahar 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67952
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            20
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+</tr>
+
+            <tr>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67931
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Andrey Skobkov
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Serg1 Serg2
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            107.9
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Александр Григорьев 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            RM Zahar Zahar 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67952
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            20
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+</tr>
+
+            <tr>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67931
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Andrey Skobkov
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Serg1 Serg2
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            107.9
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Александр Григорьев 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            RM Zahar Zahar 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67952
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            20
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+</tr>
+
+            <tr>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67931
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Andrey Skobkov
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Serg1 Serg2
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            107.9
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Александр Григорьев 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            RM Zahar Zahar 
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            67952
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            20
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            50791
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            59
+        </div>
+    </div>
+</td>
+
+</tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="m-table__bottom">
+    <div class="text12 dark-text">
+        Показать 1 по 4 с 333
+    </div>
+    <div class="pagination">
+        <button class="pagination__btn">
+            <img src="img/prev.webp" alt="">
+        </button>
+        <div class="pagination__nums">
+            <button class="pagination__num _active">
+                <span>1</span>
+            </button>
+            <button class="pagination__num">
+                <span>2</span>
+            </button>
+            <button class="pagination__num">
+                <span>3</span>
+            </button>
+            <button class="pagination__num">
+                <span>4</span>
+            </button>
+            <button class="pagination__num">
+                <span>5</span>
+            </button>
+            <button class="pagination__num">
+                <span>23</span>
+            </button>
+        </div>
+        <button class="pagination__btn">
+            <img src="img/next.webp" alt="">
+        </button>
+    </div>
+</div>
+
+</div>
+
+                    </div>
+
+                    <div class="changes">
+                        <div class="changes-card">
+                            <div class="text12 dark-text">
+                                Последние изменения по клиентам
+                            </div>
+                            <div class="changes-card__items">
+                                <div class="changes-item">
+    <div class="text12 dark-text">
+        Андрей Бахматов: Запрос на вывод средств
+    </div>
+    <div class="changes-item__desc">
+        21 день назад
+    </div>
+</div>
+
+                                <div class="changes-item">
+    <div class="text12 dark-text">
+        Андрей Бахматов: Отмена транзакции
+    </div>
+    <div class="changes-item__desc">
+        21 день назад
+    </div>
+</div>
+
+                                <div class="changes-item">
+    <div class="text12 dark-text">
+        Андрей Бахматов: Запрос на вывод средств
+    </div>
+    <div class="changes-item__desc">
+        месяц назад
+    </div>
+</div>
+
+                                <div class="changes-item">
+    <div class="text12 dark-text">
+        Андрей Бахматов: Запрос на вывод средств
+    </div>
+    <div class="changes-item__desc">
+        месяц назад
+    </div>
+</div>
+
+                            </div>
+                        </div>
+                        <div class="changes-card">
+                            <div class="text12 dark-text">
+                                Последние изменения по CPM пользователям
+                            </div>
+                            <div class="changes-card__items">
+                                <div class="changes-item">
+    <div class="text12 dark-text">
+        Андрей Бахматов: Запрос на вывод средств
+    </div>
+    <div class="changes-item__desc">
+        21 день назад
+    </div>
+</div>
+
+                                <div class="changes-item">
+    <div class="text12 dark-text">
+        Андрей Бахматов: Отмена транзакции
+    </div>
+    <div class="changes-item__desc">
+        21 день назад
+    </div>
+</div>
+
+                                <div class="changes-item">
+    <div class="text12 dark-text">
+        Андрей Бахматов: Запрос на вывод средств
+    </div>
+    <div class="changes-item__desc">
+        месяц назад
+    </div>
+</div>
+
+                                <div class="changes-item">
+    <div class="text12 dark-text">
+        Андрей Бахматов: Запрос на вывод средств
+    </div>
+    <div class="changes-item__desc">
+        месяц назад
+    </div>
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

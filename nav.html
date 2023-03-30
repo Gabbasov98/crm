@@ -1,0 +1,823 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="page">
+
+    <div class="wrapper" style="display: block;padding: 50px;">
+        <a href="banking.html" style="display: block; margin-bottom: 20px;">
+            Банкинг
+        </a>
+        <a href="dashboard.html" style="display: block; margin-bottom: 20px;">
+            Панель управления
+        </a>
+        <a href="clients.html" style="display: block; margin-bottom: 20px;">
+            Клиенты
+        </a>
+        <a href="lendings.html" style="display: block; margin-bottom: 20px;">
+            Лендинги
+        </a>
+        <a href="report.html" style="display: block; margin-bottom: 20px;">
+            Отчет
+        </a>
+        <a href="company.html" style="display: block; margin-bottom: 20px;">
+            Компания
+        </a>
+        <a href="referal.html" style="display: block; margin-bottom: 20px;">
+            Рефералка
+        </a>
+
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="taskModal">
+            Добавить задачу
+        </button>
+        <br>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="clientModal">
+            Редактирование клиента
+        </button>
+        <br>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="channelModal">
+            Добавить канал трафика и генерацию токена
+        </button>
+
+    </div>
+
+    <div class="modal task-modal" id="taskModal">
+    <div class="modal__bg _close-modal"></div>
+    <div class="modal__dialog">
+        <div class="modal__top">
+            <div class="modal__title text14">
+                Добавить задачу
+            </div>
+            <button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.66797 2L12.3346 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+                    <path d="M12.3359 2L1.66927 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+                </svg>
+            </button>
+        </div>
+        <div class="task-modal__time">
+            <fieldset class="fg _small">
+                <label>Дата и время выполнения задач</label>
+                <div class="fg__multi">
+                    <div class="task-modal__date">
+                        <input type="text" class="date-input" value="08.03.2023">
+                        <span class="task-modal__date-img">
+                            <img src="img/calendar3.webp" alt="">
+                        </span>
+                    </div>
+                    <div class="task-modal__hours">
+                        <input type="text" value="11:47">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="fg _small">
+                <label>Напомнить за</label>
+                <select>
+                    <option selected>5 минут</option>
+                    <option>15 минут</option>
+                </select>
+            </fieldset>
+        </div>
+        <div class="task-modal__form">
+            <div class="task-modal__title2">
+                Сочнев Сергей Васильевич | #33209908
+            </div>
+            <div class="task-modal__form-grid">
+                <fieldset class="fg">
+                    <label>Тип</label>
+                    <select>
+                        <option selected>Звонок</option>
+                        <option>Звонок2</option>
+                    </select>
+                </fieldset>
+                <fieldset class="fg">
+                    <label>Ответственный</label>
+                    <select>
+                        <option selected>Marketing</option>
+                        <option>Marketing2</option>
+                    </select>
+                </fieldset>
+                <fieldset class="fg _full">
+                    <label>Описание</label>
+                    <textarea></textarea>
+                </fieldset>
+            </div>
+            <div class="modal__nav">
+                <button class="_close-modal modal__btn m-btn m-btn-red-outline">
+                    <span>Закрыть</span>
+                </button>
+                <button class="modal__btn m-btn m-btn-primary">
+                    <span>Сохранить</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal client-modal" id="clientModal">
+    <div class="modal__bg _close-modal"></div>
+    <div class="modal__dialog tabs-parent">
+        <div class="modal__top">
+            <div class="modal__title text14">
+                Редактирование клиента #33209908 | Сочнев Сергей Васильевич
+            </div>
+            <button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.66797 2L12.3346 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+                    <path d="M12.3359 2L1.66927 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+                </svg>
+            </button>
+        </div>
+        <div class="client-modal__nav">
+            <div class="tabs">
+                <div class="tab _active" data-tab="info">
+                    <img src="img/info.webp" alt="">
+                    <span>Основная информация</span>
+                </div>
+                <div class="tab" data-tab="comment">
+                    <img src="img/comment2.webp" alt="">
+                    <span>Комментари</span>
+                </div>
+                <div class="tab" data-tab="sms">
+                    <img src="img/sms.webp" alt="">
+                    <span>SMS</span>
+                </div>
+                <div class="tab" data-tab="log">
+                    <img src="img/log.webp" alt="">
+                    <span>Лог событий</span>
+                </div>
+            </div>
+            <button class="client-modal__add m-btn m-btn-primary">
+                <img src="img/calendar4.webp" alt="">
+                <span>Добавить звонок</span>
+            </button>
+        </div>
+        <div class="client-modal__content">
+            <div class="tab-content tab-info _active">
+                <div class="client-info">
+                    <div class="client-info__top">
+                        <div class="client-info__item">
+                            <img src="img/file.webp" alt="">
+                            <span>
+                                Your(06.01.2021)
+                            </span>
+                        </div>
+                        <div class="client-info__item">
+                            <img src="img/calendar5.webp" alt="">
+                            <span>12.01.2021 18:52</span>
+                        </div>
+                        <div class="client-info__item">
+                            <img src="img/user2.webp" alt="">
+                        </div>
+                    </div>
+                    <form class="client-info__form">
+                        <fieldset class="fg">
+    
+    <label>Имя</label>
+    <input type="text" placeholder="">
+</fieldset>
+
+                        <fieldset class="fg">
+    
+    <label>Имя2</label>
+    <input type="text" placeholder="">
+</fieldset>
+
+                        <fieldset class="fg">
+    
+    <label>Телефон</label>
+    <input type="tel" placeholder="">
+</fieldset>
+
+                        <fieldset class="fg">
+    
+    <label>Телефон2</label>
+    <input type="tel" placeholder="">
+</fieldset>
+
+                        <fieldset class="fg">
+    
+    <label>Email</label>
+    <input type="email" placeholder="">
+</fieldset>
+
+                        <fieldset class="fg">
+    
+    <label>Кампания</label>
+    <input type="text" placeholder="">
+</fieldset>
+
+                        <fieldset class="fg">
+    
+    <label>Ответственный</label>
+    <select>
+        <option selected>CTR-Artur</option>
+        <option>CTR-Artur 2</option>
+        <option>CTR-Artur 3</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    
+    <label>Источник</label>
+    <select>
+        <option selected>Your(06.01.2021)</option>
+        <option>Your(06.01.2021) 2</option>
+        <option>Your(06.01.2021) 3</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    
+    <label>Статус</label>
+    <select>
+        <option selected>Не заинтересовал</option>
+        <option>Не заинтересовал 2</option>
+        <option>Не заинтересовал 3</option>
+    </select>
+</fieldset>
+
+                    </form>
+                </div>
+            </div>
+            <div class="tab-content tab-comment">
+                Комментари
+            </div>
+            <div class="tab-content tab-sms">
+                SMS
+            </div>
+            <div class="tab-content tab-log">
+                <div class="client-log">
+                    <div class="client-log__items">
+                        <div class="log-card">
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/calendar3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            28.05.2021 11:12
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            265922
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            Неназначен ответственный
+        </div>
+    </div>
+</div>
+
+                        <div class="log-card">
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/calendar3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            28.05.2021 11:12
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            265922
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/view.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            Просмотр профиля
+        </div>
+    </div>
+</div>
+
+                        <div class="log-card">
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/calendar3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            28.05.2021 11:12
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            265922
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/phone2.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            Телефонный звонок клиенту <span class='red-text'>Ошибка</span>
+        </div>
+    </div>
+</div>
+
+                        <div class="log-card">
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/calendar3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            28.05.2021 11:12
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            265922
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/check2.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            Известен статус: <span class='blue-text'>“Не заинтересовал”</span>
+        </div>
+    </div>
+</div>
+
+                        <div class="log-card">
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/calendar3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            28.05.2021 11:12
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            265922
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            Неназначен ответственный
+        </div>
+    </div>
+</div>
+
+                        <div class="log-card">
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/calendar3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            28.05.2021 11:12
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            265922
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/view.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            Просмотр профиля
+        </div>
+    </div>
+</div>
+
+                        <div class="log-card">
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/calendar3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            28.05.2021 11:12
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            265922
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/phone2.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            Телефонный звонок клиенту <span class='red-text'>Ошибка</span>
+        </div>
+    </div>
+</div>
+
+                        <div class="log-card">
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/calendar3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            28.05.2021 11:12
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            265922
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/check2.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            Известен статус: <span class='blue-text'>“Не заинтересовал”</span>
+        </div>
+    </div>
+</div>
+
+                        <div class="log-card">
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/calendar3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            28.05.2021 11:12
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            265922
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            Неназначен ответственный
+        </div>
+    </div>
+</div>
+
+                        <div class="log-card">
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/calendar3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            28.05.2021 11:12
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            265922
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/view.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            Просмотр профиля
+        </div>
+    </div>
+</div>
+
+                        <div class="log-card">
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/calendar3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            28.05.2021 11:12
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            265922
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/phone2.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            Телефонный звонок клиенту <span class='red-text'>Ошибка</span>
+        </div>
+    </div>
+</div>
+
+                        <div class="log-card">
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/calendar3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            28.05.2021 11:12
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            265922
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/check2.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            Известен статус: <span class='blue-text'>“Не заинтересовал”</span>
+        </div>
+    </div>
+</div>
+
+                        <div class="log-card">
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/calendar3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            28.05.2021 11:12
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            265922
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            Неназначен ответственный
+        </div>
+    </div>
+</div>
+
+                        <div class="log-card">
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/calendar3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            28.05.2021 11:12
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            265922
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/view.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            Просмотр профиля
+        </div>
+    </div>
+</div>
+
+                        <div class="log-card">
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/calendar3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            28.05.2021 11:12
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            265922
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/phone2.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            Телефонный звонок клиенту <span class='red-text'>Ошибка</span>
+        </div>
+    </div>
+</div>
+
+                        <div class="log-card">
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/calendar3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            28.05.2021 11:12
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/user3.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            265922
+        </div>
+    </div>
+    <div class="log-card__item">
+        <div class="log-card__icon">
+            <img src="img/check2.webp" alt="">
+        </div>
+        <div class="log-card__text">
+            Известен статус: <span class='blue-text'>“Не заинтересовал”</span>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal__nav">
+                <button class="modal__btn _call m-btn m-btn-primary">
+                    <img src="img/phone.webp" alt="">
+                    <span>Позвонить</span>
+                </button>
+                <button class=" _close-modal modal__btn m-btn m-btn-red-outline">
+                    <span>Закрыть</span>
+                </button>
+                <button class="modal__btn m-btn m-btn-primary">
+                    <span>Сохранить</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal channel-modal" id="channelModal">
+    <div class="modal__bg _close-modal"></div>
+    <div class="modal__dialog">
+        <div class="channel-modal__wrap">
+            <button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.66797 2L12.3346 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+                    <path d="M12.3359 2L1.66927 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+                </svg>
+            </button>
+            <div class="channel-modal__title">
+                Добавить канал трафика и <br> генерацию токена
+            </div>
+            <div class="channel-modal__form">
+                <fieldset class="fg">
+    
+    <label>Имя</label>
+    <input type="text" placeholder="Имя">
+</fieldset>
+
+                <fieldset class="fg">
+    
+    <label>Источник</label>
+    <select>
+        <option selected>Источник</option>
+        <option>Источник 2</option>
+        <option>Источник 3</option>
+    </select>
+</fieldset>
+
+                <fieldset class="fg">
+    
+    <label>Офис</label>
+    <select>
+        <option selected>Офис</option>
+        <option>Офис 2</option>
+        <option>Офис 3</option>
+    </select>
+</fieldset>
+
+                <fieldset class="fg">
+    
+    <label>Отделение</label>
+    <select>
+        <option selected>Отделение</option>
+        <option>Отделение 2</option>
+        <option>Отделение 3</option>
+    </select>
+</fieldset>
+
+                <fieldset class="fg">
+    
+    <label>Сайт</label>
+    <select>
+        <option selected>Сайт</option>
+        <option>Сайт 2</option>
+        <option>Сайт 3</option>
+    </select>
+</fieldset>
+
+                <fieldset class="fg">
+    
+    <label>Партнерская сеть</label>
+    <select>
+        <option selected>Партнерская сеть</option>
+        <option>Партнерская сеть 2</option>
+        <option>Партнерская сеть 3</option>
+    </select>
+</fieldset>
+
+                <div class="fg">
+                    <label>Описание кампании..</label>
+                    <textarea placeholder="Описание кампании.."></textarea>
+                </div>
+                <div class="modal__nav">
+                    <button class="modal__btn m-btn m-btn-primary">
+                        <span>Сохранить</span>
+                    </button>
+                    <button class="_close-modal modal__btn m-btn m-btn-red-outline">
+                        <span>Отменить</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

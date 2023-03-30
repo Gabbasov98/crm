@@ -1,0 +1,705 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Рефералка</title>
+</head>
+
+<body class="page">
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="sidebar__top">
+    <a href="" class="sidebar__logo">
+        <img src="img/logo.webp" alt="">
+    </a>
+    <a href="" class="sidebar__logout">
+        <img src="img/logout.webp" alt="">
+    </a>
+    <a href="" class="sidebar__note">
+        <img src="img/note.webp" alt="">
+        <span class="sidebar__note-num">1</span>
+    </a>
+    <a href="" class="sidebar__calendar">
+        <img src="img/calendar.webp" alt="">
+    </a>
+    <button class="burger"></button>
+</div>
+<nav class="nav">
+    <div class="nav__item">
+        <a href="" class="nav__link">
+            <i class="nav__icon">
+                <img src="img/user.webp" alt="">
+            </i>
+            <span>Клиенты</span>
+        </a>
+    </div>
+    <div class="nav__item">
+        <a href="" class="nav__link">
+            <i class="nav__icon">
+                <img src="img/settings.webp" alt="">
+            </i>
+            <span>Панель управления</span>
+        </a>
+    </div>
+    <div class="nav__item">
+        <div class="nav__show">
+            <i class="nav__icon">
+                <img src="img/shield.webp" alt="">
+            </i>
+            <span>Верификация</span>
+            <img src="img/arrow.webp" alt="" class="nav__arrow">
+        </div>
+        <div class="nav__hidden">
+            <div class="nav__sublinks">
+                <a href="" class="nav__sublink _active">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Верификация2</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="nav__item">
+        <div class="nav__show">
+            <i class="nav__icon">
+                <img src="img/marketing.webp" alt="">
+            </i>
+            <span>Маркетинг</span>
+            <img src="img/arrow.webp" alt="" class="nav__arrow">
+        </div>
+        <div class="nav__hidden">
+            <div class="nav__sublinks">
+                <a href="" class="nav__sublink _active">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Кампания</span>
+                </a>
+                <a href="" class="nav__sublink">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Лендинги</span>
+                </a>
+                <a href="" class="nav__sublink">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Отчет</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="nav__item">
+        <a href="" class="nav__link">
+            <i class="nav__icon">
+                <img src="img/banking.webp" alt="">
+            </i>
+            <span>Банкинг</span>
+        </a>
+    </div>
+    <div class="nav__item">
+        <div class="nav__show">
+            <i class="nav__icon">
+                <img src="img/account.webp" alt="">
+            </i>
+            <span>Аккаунты</span>
+            <img src="img/arrow.webp" alt="" class="nav__arrow">
+        </div>
+        <div class="nav__hidden">
+            <div class="nav__sublinks">
+                <a href="" class="nav__sublink _active">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Аккаунты 2</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="nav__item">
+        <a href="" class="nav__link">
+            <i class="nav__icon">
+                <img src="img/referal.webp" alt="">
+            </i>
+            <span>Рефералка</span>
+        </a>
+    </div>
+</nav>
+
+<!--Банкинг-->
+<!--Аккаунты-->
+
+        </aside>
+        <main class="content">
+
+            <div class="breadcrumbs">
+                <a href="" class="breadcrumbs__item">Панель управления</a>
+                <span class="breadcrumbs__item">Рефералка</span>
+            </div>
+
+            <div class="wrap referal">
+                <div class="wrap__scroll">
+                    <div class="filter">
+    <a href="" class="filter__btn m-btn m-btn-primary">
+        <span>Все</span>
+    </a>
+    <div class="filter__group">
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Предыдущий год</span>
+        </a>
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Этот год</span>
+        </a>
+    </div>
+    <div class="filter__group">
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Предыдущий месяц</span>
+        </a>
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Этот месяц</span>
+        </a>
+    </div>
+    <div class="filter__group">
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Предыдущая неделя</span>
+        </a>
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Эта неделя</span>
+        </a>
+    </div>
+    <div class="filter__group">
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Вчера</span>
+        </a>
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Сегодня</span>
+        </a>
+    </div>
+    <button class="date-btn">
+        <img src="img/calendar2.png" alt="">
+        <span>Выбрать дату периода</span>
+        <input class="date-input" type="text">
+    </button>
+</div>
+
+
+                    <div class="banking-fields">
+                        <fieldset class="fg">
+                            <input type="text" placeholder="ID Клиента, Имя, Телефон, Email">
+                        </fieldset>
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Офис</option>
+        <option>Офис</option>
+        <option>Офис 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Кампания</option>
+        <option>Кампания</option>
+        <option>Кампания 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Команда</option>
+        <option>Команда</option>
+        <option>Команда 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Страна</option>
+        <option>Страна</option>
+        <option>Страна 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Источник</option>
+        <option>Источник</option>
+        <option>Источник 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Сайт</option>
+        <option>Сайт</option>
+        <option>Сайт 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Партнерская сеть</option>
+        <option>Партнерская сеть</option>
+        <option>Партнерская сеть 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Парт. иенеджер</option>
+        <option>Парт. иенеджер</option>
+        <option>Парт. иенеджер 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Способ оплаты</option>
+        <option>Способ оплаты</option>
+        <option>Способ оплаты 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Статус Транзакции</option>
+        <option>Статус Транзакции</option>
+        <option>Статус Транзакции 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Тип Транзакции</option>
+        <option>Тип Транзакции</option>
+        <option>Тип Транзакции 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Менеджер</option>
+        <option>Менеджер</option>
+        <option>Менеджер 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Конв. Менеджер</option>
+        <option>Конв. Менеджер</option>
+        <option>Конв. Менеджер 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Менеджер Розн. торг.</option>
+        <option>Менеджер Розн. торг.</option>
+        <option>Менеджер Розн. торг. 2</option>
+    </select>
+</fieldset>
+
+                    </div>
+
+                    <div class="banking-fields__buttons">
+                        <button class="banking-fields__btn m-btn m-btn-primary">
+                            <span>Применить выбранные фильтры</span>
+                        </button>
+                        <button class="banking-fields__btn m-btn m-btn-primary-outline">
+                            <img src="img/refresh.webp" alt="">
+                            <span>Сбросить фильтры</span>
+                        </button>
+                    </div>
+
+                    <div class="banking-nums">
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        69
+    </div>
+    <div class="stat-card__title gray-text">
+        Лиды
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        $ 3477 678.75
+    </div>
+    <div class="stat-card__title gray-text">
+        Перекрестный депозит
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat2.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        56
+    </div>
+    <div class="stat-card__title gray-text">
+        Новый FTD TFFTD
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat3.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        $ 737734.93
+    </div>
+    <div class="stat-card__title gray-text">
+        Выводы
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat4.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        $ 1164004.86
+    </div>
+    <div class="stat-card__title gray-text">
+        Конверсионный депозит
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat5.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        $ 3245679.69
+    </div>
+    <div class="stat-card__title gray-text">
+        Удерживаемый депозит
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat6.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        5
+    </div>
+    <div class="stat-card__title gray-text">
+        Частичный
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat7.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        $ 2744186.8
+    </div>
+    <div class="stat-card__title gray-text">
+        Чистый депозит
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat8.png" alt="">
+    </div>
+</div>
+
+                    </div>
+
+                    <div class="referal-data">
+                        <div class="referal-group">
+                            <div class="referal-group__top">
+                                <div class="referal-group__info">
+                                    <div class="referal-group__title display3">
+                                        Приглашенные рефералы
+                                    </div>
+                                    <div class="referal-group__desc text14">
+                                        Посмотрите, кто уже зарегистрировался по вашей партнерской ссылке, и сколько дохода вы получили. Не забывайте, что у нас трехуровневая реферальная программа.
+                                        Вы получаете бонусы не только за тех, кого непосредственно пригласили в CoinFuze, но и за участников, которых пригласили ваши рефералы.
+                                    </div>
+                                </div>
+                                <div class="referal-group__search fg">
+                                    <input type="text" placeholder="Поиск...">
+                                </div>
+                            </div>
+                            <div class="referal-group__content">
+                                <div class="referal-table">
+                                    <table>
+                                        <thead>
+<tr>
+    <th>
+        <span>Дата регистрации </span>
+    </th>
+    <th>
+        <span>Имя пользователя / ID</span>
+    </th>
+    <th>
+        <span>К-ство партнеров</span>
+    </th>
+    <th>
+        <span>Доход от Депозитов</span>
+    </th>
+    <th>
+        <span>Доход от Прибыли</span>
+    </th>
+    <th>
+        <span>Ваш Доход</span>
+    </th>
+</tr>
+</thead>
+
+
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <span>22.01.2018</span>
+                                            </td>
+                                            <td>
+                                                <span>Артур Пирожок / 34522734</span>
+                                            </td>
+                                            <td>
+                                                <span>43</span>
+                                            </td>
+                                            <td>
+                                                <span> 23 USDT</span>
+                                            </td>
+                                            <td>
+                                                <span>11 USDT</span>
+                                            </td>
+                                            <td>
+                                                <span>34 USDT</span>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="referal-group referal-group2">
+    <div class="referal-group__top">
+        <div class="referal-group__info">
+            <div class="referal-group__title display3">
+                Уровень 1 – комиссия от депозита и от прибыли 3%
+            </div>
+        </div>
+    </div>
+    <div class="referal-group__content">
+        <div class="referal-table">
+            <table>
+                <thead>
+<tr>
+    <th>
+        <span>Дата регистрации </span>
+    </th>
+    <th>
+        <span>Имя пользователя / ID</span>
+    </th>
+    <th>
+        <span>К-ство партнеров</span>
+    </th>
+    <th>
+        <span>Доход от Депозитов</span>
+    </th>
+    <th>
+        <span>Доход от Прибыли</span>
+    </th>
+    <th>
+        <span>Ваш Доход</span>
+    </th>
+</tr>
+</thead>
+
+
+                <tbody>
+
+                </tbody>
+            </table>
+            <div class="referal-table__empty">
+                <span class="text14">
+                    Данные недоступны
+                </span>
+            </div>
+        </div>
+        <div class="referal-table__bottom">
+            <div class="m-table__show">
+                <fieldset class="fg">
+    <select>
+        <option selected>5</option>
+        <option>28</option>
+        <option>56</option>
+    </select>
+</fieldset>
+
+                <span class="text12 dark-text">
+                    Показано от 0 до 0 из 0 записей
+                </span>
+            </div>
+            <div class="referal-table__nav">
+                <button class="pagination__btn">
+                    <img src="img/prev.webp" alt="">
+                </button>
+                <button class="pagination__btn">
+                    <img src="img/next.webp" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <div class="referal-group referal-group2">
+    <div class="referal-group__top">
+        <div class="referal-group__info">
+            <div class="referal-group__title display3">
+                Уровень 2 – комиссия от депозита и от прибыли 2%
+            </div>
+        </div>
+    </div>
+    <div class="referal-group__content">
+        <div class="referal-table">
+            <table>
+                <thead>
+<tr>
+    <th>
+        <span>Дата регистрации </span>
+    </th>
+    <th>
+        <span>Имя пользователя / ID</span>
+    </th>
+    <th>
+        <span>К-ство партнеров</span>
+    </th>
+    <th>
+        <span>Доход от Депозитов</span>
+    </th>
+    <th>
+        <span>Доход от Прибыли</span>
+    </th>
+    <th>
+        <span>Ваш Доход</span>
+    </th>
+</tr>
+</thead>
+
+
+                <tbody>
+
+                </tbody>
+            </table>
+            <div class="referal-table__empty">
+                <span class="text14">
+                    Данные недоступны
+                </span>
+            </div>
+        </div>
+        <div class="referal-table__bottom">
+            <div class="m-table__show">
+                <fieldset class="fg">
+    <select>
+        <option selected>5</option>
+        <option>28</option>
+        <option>56</option>
+    </select>
+</fieldset>
+
+                <span class="text12 dark-text">
+                    Показано от 0 до 0 из 0 записей
+                </span>
+            </div>
+            <div class="referal-table__nav">
+                <button class="pagination__btn">
+                    <img src="img/prev.webp" alt="">
+                </button>
+                <button class="pagination__btn">
+                    <img src="img/next.webp" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <div class="referal-group referal-group2">
+    <div class="referal-group__top">
+        <div class="referal-group__info">
+            <div class="referal-group__title display3">
+                Уровень 3 – комиссия от депозита и от прибыли 1%
+            </div>
+        </div>
+    </div>
+    <div class="referal-group__content">
+        <div class="referal-table">
+            <table>
+                <thead>
+<tr>
+    <th>
+        <span>Дата регистрации </span>
+    </th>
+    <th>
+        <span>Имя пользователя / ID</span>
+    </th>
+    <th>
+        <span>К-ство партнеров</span>
+    </th>
+    <th>
+        <span>Доход от Депозитов</span>
+    </th>
+    <th>
+        <span>Доход от Прибыли</span>
+    </th>
+    <th>
+        <span>Ваш Доход</span>
+    </th>
+</tr>
+</thead>
+
+
+                <tbody>
+
+                </tbody>
+            </table>
+            <div class="referal-table__empty">
+                <span class="text14">
+                    Данные недоступны
+                </span>
+            </div>
+        </div>
+        <div class="referal-table__bottom">
+            <div class="m-table__show">
+                <fieldset class="fg">
+    <select>
+        <option selected>5</option>
+        <option>28</option>
+        <option>56</option>
+    </select>
+</fieldset>
+
+                <span class="text12 dark-text">
+                    Показано от 0 до 0 из 0 записей
+                </span>
+            </div>
+            <div class="referal-table__nav">
+                <button class="pagination__btn">
+                    <img src="img/prev.webp" alt="">
+                </button>
+                <button class="pagination__btn">
+                    <img src="img/next.webp" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

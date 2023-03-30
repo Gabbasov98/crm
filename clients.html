@@ -1,0 +1,1374 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Клиенты</title>
+</head>
+
+<body class="page">
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="sidebar__top">
+    <a href="" class="sidebar__logo">
+        <img src="img/logo.webp" alt="">
+    </a>
+    <a href="" class="sidebar__logout">
+        <img src="img/logout.webp" alt="">
+    </a>
+    <a href="" class="sidebar__note">
+        <img src="img/note.webp" alt="">
+        <span class="sidebar__note-num">1</span>
+    </a>
+    <a href="" class="sidebar__calendar">
+        <img src="img/calendar.webp" alt="">
+    </a>
+    <button class="burger"></button>
+</div>
+<nav class="nav">
+    <div class="nav__item">
+        <a href="" class="nav__link">
+            <i class="nav__icon">
+                <img src="img/user.webp" alt="">
+            </i>
+            <span>Клиенты</span>
+        </a>
+    </div>
+    <div class="nav__item">
+        <a href="" class="nav__link">
+            <i class="nav__icon">
+                <img src="img/settings.webp" alt="">
+            </i>
+            <span>Панель управления</span>
+        </a>
+    </div>
+    <div class="nav__item">
+        <div class="nav__show">
+            <i class="nav__icon">
+                <img src="img/shield.webp" alt="">
+            </i>
+            <span>Верификация</span>
+            <img src="img/arrow.webp" alt="" class="nav__arrow">
+        </div>
+        <div class="nav__hidden">
+            <div class="nav__sublinks">
+                <a href="" class="nav__sublink _active">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Верификация2</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="nav__item">
+        <div class="nav__show">
+            <i class="nav__icon">
+                <img src="img/marketing.webp" alt="">
+            </i>
+            <span>Маркетинг</span>
+            <img src="img/arrow.webp" alt="" class="nav__arrow">
+        </div>
+        <div class="nav__hidden">
+            <div class="nav__sublinks">
+                <a href="" class="nav__sublink _active">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Кампания</span>
+                </a>
+                <a href="" class="nav__sublink">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Лендинги</span>
+                </a>
+                <a href="" class="nav__sublink">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Отчет</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="nav__item">
+        <a href="" class="nav__link">
+            <i class="nav__icon">
+                <img src="img/banking.webp" alt="">
+            </i>
+            <span>Банкинг</span>
+        </a>
+    </div>
+    <div class="nav__item">
+        <div class="nav__show">
+            <i class="nav__icon">
+                <img src="img/account.webp" alt="">
+            </i>
+            <span>Аккаунты</span>
+            <img src="img/arrow.webp" alt="" class="nav__arrow">
+        </div>
+        <div class="nav__hidden">
+            <div class="nav__sublinks">
+                <a href="" class="nav__sublink _active">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Аккаунты 2</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="nav__item">
+        <a href="" class="nav__link">
+            <i class="nav__icon">
+                <img src="img/referal.webp" alt="">
+            </i>
+            <span>Рефералка</span>
+        </a>
+    </div>
+</nav>
+
+<!--Банкинг-->
+<!--Аккаунты-->
+
+        </aside>
+        <main class="content">
+
+            <div class="breadcrumbs">
+                <a href="" class="breadcrumbs__item">Панель управления</a>
+                <span class="breadcrumbs__item">Клиенты</span>
+            </div>
+
+            <div class="wrap clients">
+                <div class="wrap__scroll">
+                    <div class="filter">
+    <a href="" class="filter__btn m-btn m-btn-primary">
+        <span>Все</span>
+    </a>
+    <div class="filter__group">
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Предыдущий год</span>
+        </a>
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Этот год</span>
+        </a>
+    </div>
+    <div class="filter__group">
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Предыдущий месяц</span>
+        </a>
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Этот месяц</span>
+        </a>
+    </div>
+    <div class="filter__group">
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Предыдущая неделя</span>
+        </a>
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Эта неделя</span>
+        </a>
+    </div>
+    <div class="filter__group">
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Вчера</span>
+        </a>
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Сегодня</span>
+        </a>
+    </div>
+    <button class="date-btn">
+        <img src="img/calendar2.png" alt="">
+        <span>Выбрать дату периода</span>
+        <input class="date-input" type="text">
+    </button>
+</div>
+
+
+                    <div class="banking-fields">
+                        <fieldset class="fg">
+                            <input type="text" placeholder="ID Клиента, Имя, Телефон, Email">
+                        </fieldset>
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Офис</option>
+        <option>Офис</option>
+        <option>Офис 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Кампания</option>
+        <option>Кампания</option>
+        <option>Кампания 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Команда</option>
+        <option>Команда</option>
+        <option>Команда 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Страна</option>
+        <option>Страна</option>
+        <option>Страна 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Источник</option>
+        <option>Источник</option>
+        <option>Источник 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Сайт</option>
+        <option>Сайт</option>
+        <option>Сайт 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Партнерская сеть</option>
+        <option>Партнерская сеть</option>
+        <option>Партнерская сеть 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Парт. иенеджер</option>
+        <option>Парт. иенеджер</option>
+        <option>Парт. иенеджер 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Способ оплаты</option>
+        <option>Способ оплаты</option>
+        <option>Способ оплаты 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Статус Транзакции</option>
+        <option>Статус Транзакции</option>
+        <option>Статус Транзакции 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Тип Транзакции</option>
+        <option>Тип Транзакции</option>
+        <option>Тип Транзакции 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Менеджер</option>
+        <option>Менеджер</option>
+        <option>Менеджер 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Конв. Менеджер</option>
+        <option>Конв. Менеджер</option>
+        <option>Конв. Менеджер 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Менеджер Розн. торг.</option>
+        <option>Менеджер Розн. торг.</option>
+        <option>Менеджер Розн. торг. 2</option>
+    </select>
+</fieldset>
+
+                    </div>
+
+                    <div class="banking-fields__buttons">
+                        <button class="banking-fields__btn m-btn m-btn-primary">
+                            <span>Применить выбранные фильтры</span>
+                        </button>
+                        <button class="banking-fields__btn m-btn m-btn-primary-outline">
+                            <img src="img/refresh.webp" alt="">
+                            <span>Сбросить фильтры</span>
+                        </button>
+                    </div>
+
+                    <div class="banking-nums">
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        69
+    </div>
+    <div class="stat-card__title gray-text">
+        Лиды
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        $ 3477 678.75
+    </div>
+    <div class="stat-card__title gray-text">
+        Перекрестный депозит
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat2.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        56
+    </div>
+    <div class="stat-card__title gray-text">
+        Новый FTD TFFTD
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat3.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        $ 737734.93
+    </div>
+    <div class="stat-card__title gray-text">
+        Выводы
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat4.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        $ 1164004.86
+    </div>
+    <div class="stat-card__title gray-text">
+        Конверсионный депозит
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat5.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        $ 3245679.69
+    </div>
+    <div class="stat-card__title gray-text">
+        Удерживаемый депозит
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat6.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        5
+    </div>
+    <div class="stat-card__title gray-text">
+        Частичный
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat7.png" alt="">
+    </div>
+</div>
+
+                        <div class="stat-card">
+    <div class="stat-card__num">
+        $ 2744186.8
+    </div>
+    <div class="stat-card__title gray-text">
+        Чистый депозит
+    </div>
+    <div class="stat-card__img">
+        <img src="img/stat8.png" alt="">
+    </div>
+</div>
+
+                    </div>
+
+                    <div class="clients-data">
+                        <div class="m-table__content">
+                            <div class="clients-data__top">
+                                <div class="text12 dark-text">
+                                    Найдено клиентов: 247836
+                                </div>
+                                <div class="m-table__show">
+                                    <span class="text12 dark-text">
+                                        Показывать на странице
+                                    </span>
+                                    <fieldset class="fg">
+    <select>
+        <option selected>14</option>
+        <option>28</option>
+        <option>56</option>
+    </select>
+</fieldset>
+
+                                </div>
+                            </div>
+                            <div class="m-table">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="th">
+                                                <div class="th__check m-check">
+                                                    <input type="checkbox">
+                                                    <label></label>
+                                                </div>
+                                                <span class="th__title">
+                                                   ID
+                                                </span>
+                                                <button class="th__sort"></button>
+                                            </div>
+                                        </th>
+                                        <th>
+    <div class="th">
+        <span class="th__title">
+            Имя
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                        <th>
+    <div class="th">
+        <span class="th__title">
+            Баланс
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                        <th>
+    <div class="th">
+        <span class="th__title">
+            Дата звонка 
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                        <th>
+    <div class="th">
+        <span class="th__title">
+            Телефон
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                        <th>
+    <div class="th">
+        <span class="th__title">
+            Ист.
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                        <th>
+    <div class="th">
+        <span class="th__title">
+            Ответст-ый
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                        <th class="_dark">
+                                            <div class="th">
+                                                <span class="th__title">
+                                                   Статус
+                                                </span>
+                                                <button class="th__sort"></button>
+                                            </div>
+                                        </th>
+                                        <th>
+    <div class="th">
+        <span class="th__title">
+            Страна
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                        <th>
+    <div class="th">
+        <span class="th__title">
+            Комментарий
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                        <th>
+    <div class="th">
+        <span class="th__title">
+            История звонков
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                        <th>
+    <div class="th">
+        <span class="th__title">
+            Email
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                        <th>
+    <div class="th">
+        <span class="th__title">
+            Компания
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                        <th>
+    <div class="th">
+        <span class="th__title">
+            Дата созд.
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                        <th>
+    <div class="th">
+        <span class="th__title">
+            Дата измен.
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+    <td>
+        <div class="td">
+            <div class="td__check m-check">
+                <input type="checkbox">
+                <label></label>
+            </div>
+            <div class="td__title">
+                <a href="">Сочнев Сергей Васильевич</a>
+            </div>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <div class="td__title">
+                33209908
+            </div>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            0
+        </div>
+    </div>
+</td>
+
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-red">
+                <img src="img/phone.png" alt="">
+                <span>25 января 15:25</span>
+            </button>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-yellow">
+                <img src="img/phone.png" alt="">
+                <span>Позвонить</span>
+            </button>
+            <button class="call-data m-btn m-btn-green">
+                <span>смс</span>
+            </button>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Your(06.01.2021) 
+        </div>
+    </div>
+</td>
+
+    <td></td>
+    <td>
+        <fieldset class="fg">
+            <select>
+                <option>Холодный</option>
+                <option selected>Не заинтересовал </option>
+                <option>Не удалось связаться</option>
+                <option>Перезвонить позже</option>
+                <option>Сконвертирован</option>
+                <option>Некачественный лид</option>
+                <option>Разговора не было</option>
+                <option>Был в обработке/горячий</option>
+                <option>Передача клиента</option>
+                <option>Горячий</option>
+                <option>В обработке</option>
+            </select>
+        </fieldset>
+    </td>
+    <td>
+        <div class="country">
+            <div class="country__flag">
+                <img src="img/lv.webp" alt="">
+            </div>
+            <span class="country__title dark-text">LV</span>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-blue">
+                <img src="img/comment.png" alt="">
+                <span>Коментарий</span>
+            </button>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            14.05.2021 15:20
+        </div>
+    </div>
+</td>
+
+    <td>
+        <fieldset class="fg">
+    <select>
+        <option selected>Email</option>
+        <option>Email2</option>
+        <option>Email3</option>
+    </select>
+</fieldset>
+
+    </td>
+    <td></td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            12.01.2021 18:32
+        </div>
+    </div>
+</td>
+
+    <td>
+        <div class="td">
+            <div class="td__title">
+                14.05.2021 15:20
+            </div>
+            <button class="td__remove">
+                <img src="img/remove.webp" alt="">
+            </button>
+        </div>
+    </td>
+</tr>
+<!--                          -->
+
+                                        <tr>
+    <td>
+        <div class="td">
+            <div class="td__check m-check">
+                <input type="checkbox">
+                <label></label>
+            </div>
+            <div class="td__title">
+                <a href="">Смолева Светлана</a>
+            </div>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <div class="td__title">
+                33209908
+            </div>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            0
+        </div>
+    </div>
+</td>
+
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-white">
+                <img src="img/calendar3.png" alt="">
+                <span>Добавить звонок</span>
+            </button>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-yellow">
+                <img src="img/phone.png" alt="">
+                <span>Позвонить</span>
+            </button>
+            <button class="call-data m-btn m-btn-green">
+                <span>смс</span>
+            </button>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Your(06.01.2021) 
+        </div>
+    </div>
+</td>
+
+    <td></td>
+    <td>
+        <fieldset class="fg">
+            <select>
+                <option>Холодный</option>
+                <option selected>Не заинтересовал </option>
+                <option>Не удалось связаться</option>
+                <option>Перезвонить позже</option>
+                <option>Сконвертирован</option>
+                <option>Некачественный лид</option>
+                <option>Разговора не было</option>
+                <option>Был в обработке/горячий</option>
+                <option>Передача клиента</option>
+                <option>Горячий</option>
+                <option>В обработке</option>
+            </select>
+        </fieldset>
+    </td>
+    <td>
+        <div class="country">
+            <div class="country__flag">
+                <img src="img/sp.webp" alt="">
+            </div>
+            <span class="country__title dark-text">ES</span>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-blue">
+                <img src="img/comment.png" alt="">
+                <span>Коментарий</span>
+            </button>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            14.05.2021 15:20
+        </div>
+    </div>
+</td>
+
+    <td>
+        <fieldset class="fg">
+    <select>
+        <option selected>Email</option>
+        <option>Email2</option>
+        <option>Email3</option>
+    </select>
+</fieldset>
+
+    </td>
+    <td></td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            12.01.2021 18:32
+        </div>
+    </div>
+</td>
+
+    <td>
+        <div class="td">
+            <div class="td__title">
+                14.05.2021 15:20
+            </div>
+            <button class="td__remove">
+                <img src="img/remove.webp" alt="">
+            </button>
+        </div>
+    </td>
+</tr>
+<!--                          -->
+
+                                        <tr>
+    <td>
+        <div class="td">
+            <div class="td__check m-check">
+                <input type="checkbox">
+                <label></label>
+            </div>
+            <div class="td__title">
+                <a href="">Сочнев Сергей Васильевич</a>
+            </div>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <div class="td__title">
+                33209908
+            </div>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            0
+        </div>
+    </div>
+</td>
+
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-red">
+                <img src="img/phone.png" alt="">
+                <span>25 января 15:25</span>
+            </button>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-yellow">
+                <img src="img/phone.png" alt="">
+                <span>Позвонить</span>
+            </button>
+            <button class="call-data m-btn m-btn-green">
+                <span>смс</span>
+            </button>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Your(06.01.2021) 
+        </div>
+    </div>
+</td>
+
+    <td></td>
+    <td>
+        <fieldset class="fg">
+            <select>
+                <option>Холодный</option>
+                <option selected>Не заинтересовал </option>
+                <option>Не удалось связаться</option>
+                <option>Перезвонить позже</option>
+                <option>Сконвертирован</option>
+                <option>Некачественный лид</option>
+                <option>Разговора не было</option>
+                <option>Был в обработке/горячий</option>
+                <option>Передача клиента</option>
+                <option>Горячий</option>
+                <option>В обработке</option>
+            </select>
+        </fieldset>
+    </td>
+    <td>
+        <div class="country">
+            <div class="country__flag">
+                <img src="img/lv.webp" alt="">
+            </div>
+            <span class="country__title dark-text">LV</span>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-blue">
+                <img src="img/comment.png" alt="">
+                <span>Коментарий</span>
+            </button>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            14.05.2021 15:20
+        </div>
+    </div>
+</td>
+
+    <td>
+        <fieldset class="fg">
+    <select>
+        <option selected>Email</option>
+        <option>Email2</option>
+        <option>Email3</option>
+    </select>
+</fieldset>
+
+    </td>
+    <td></td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            12.01.2021 18:32
+        </div>
+    </div>
+</td>
+
+    <td>
+        <div class="td">
+            <div class="td__title">
+                14.05.2021 15:20
+            </div>
+            <button class="td__remove">
+                <img src="img/remove.webp" alt="">
+            </button>
+        </div>
+    </td>
+</tr>
+<!--                          -->
+
+                                        <tr>
+    <td>
+        <div class="td">
+            <div class="td__check m-check">
+                <input type="checkbox">
+                <label></label>
+            </div>
+            <div class="td__title">
+                <a href="">Смолева Светлана</a>
+            </div>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <div class="td__title">
+                33209908
+            </div>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            0
+        </div>
+    </div>
+</td>
+
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-white">
+                <img src="img/calendar3.png" alt="">
+                <span>Добавить звонок</span>
+            </button>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-yellow">
+                <img src="img/phone.png" alt="">
+                <span>Позвонить</span>
+            </button>
+            <button class="call-data m-btn m-btn-green">
+                <span>смс</span>
+            </button>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Your(06.01.2021) 
+        </div>
+    </div>
+</td>
+
+    <td></td>
+    <td>
+        <fieldset class="fg">
+            <select>
+                <option>Холодный</option>
+                <option selected>Не заинтересовал </option>
+                <option>Не удалось связаться</option>
+                <option>Перезвонить позже</option>
+                <option>Сконвертирован</option>
+                <option>Некачественный лид</option>
+                <option>Разговора не было</option>
+                <option>Был в обработке/горячий</option>
+                <option>Передача клиента</option>
+                <option>Горячий</option>
+                <option>В обработке</option>
+            </select>
+        </fieldset>
+    </td>
+    <td>
+        <div class="country">
+            <div class="country__flag">
+                <img src="img/sp.webp" alt="">
+            </div>
+            <span class="country__title dark-text">ES</span>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-blue">
+                <img src="img/comment.png" alt="">
+                <span>Коментарий</span>
+            </button>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            14.05.2021 15:20
+        </div>
+    </div>
+</td>
+
+    <td>
+        <fieldset class="fg">
+    <select>
+        <option selected>Email</option>
+        <option>Email2</option>
+        <option>Email3</option>
+    </select>
+</fieldset>
+
+    </td>
+    <td></td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            12.01.2021 18:32
+        </div>
+    </div>
+</td>
+
+    <td>
+        <div class="td">
+            <div class="td__title">
+                14.05.2021 15:20
+            </div>
+            <button class="td__remove">
+                <img src="img/remove.webp" alt="">
+            </button>
+        </div>
+    </td>
+</tr>
+<!--                          -->
+
+                                        <tr>
+    <td>
+        <div class="td">
+            <div class="td__check m-check">
+                <input type="checkbox">
+                <label></label>
+            </div>
+            <div class="td__title">
+                <a href="">Сочнев Сергей Васильевич</a>
+            </div>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <div class="td__title">
+                33209908
+            </div>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            0
+        </div>
+    </div>
+</td>
+
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-red">
+                <img src="img/phone.png" alt="">
+                <span>25 января 15:25</span>
+            </button>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-yellow">
+                <img src="img/phone.png" alt="">
+                <span>Позвонить</span>
+            </button>
+            <button class="call-data m-btn m-btn-green">
+                <span>смс</span>
+            </button>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Your(06.01.2021) 
+        </div>
+    </div>
+</td>
+
+    <td></td>
+    <td>
+        <fieldset class="fg">
+            <select>
+                <option>Холодный</option>
+                <option selected>Не заинтересовал </option>
+                <option>Не удалось связаться</option>
+                <option>Перезвонить позже</option>
+                <option>Сконвертирован</option>
+                <option>Некачественный лид</option>
+                <option>Разговора не было</option>
+                <option>Был в обработке/горячий</option>
+                <option>Передача клиента</option>
+                <option>Горячий</option>
+                <option>В обработке</option>
+            </select>
+        </fieldset>
+    </td>
+    <td>
+        <div class="country">
+            <div class="country__flag">
+                <img src="img/lv.webp" alt="">
+            </div>
+            <span class="country__title dark-text">LV</span>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-blue">
+                <img src="img/comment.png" alt="">
+                <span>Коментарий</span>
+            </button>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            14.05.2021 15:20
+        </div>
+    </div>
+</td>
+
+    <td>
+        <fieldset class="fg">
+    <select>
+        <option selected>Email</option>
+        <option>Email2</option>
+        <option>Email3</option>
+    </select>
+</fieldset>
+
+    </td>
+    <td></td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            12.01.2021 18:32
+        </div>
+    </div>
+</td>
+
+    <td>
+        <div class="td">
+            <div class="td__title">
+                14.05.2021 15:20
+            </div>
+            <button class="td__remove">
+                <img src="img/remove.webp" alt="">
+            </button>
+        </div>
+    </td>
+</tr>
+<!--                          -->
+
+                                        <tr>
+    <td>
+        <div class="td">
+            <div class="td__check m-check">
+                <input type="checkbox">
+                <label></label>
+            </div>
+            <div class="td__title">
+                <a href="">Смолева Светлана</a>
+            </div>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <div class="td__title">
+                33209908
+            </div>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            0
+        </div>
+    </div>
+</td>
+
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-white">
+                <img src="img/calendar3.png" alt="">
+                <span>Добавить звонок</span>
+            </button>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-yellow">
+                <img src="img/phone.png" alt="">
+                <span>Позвонить</span>
+            </button>
+            <button class="call-data m-btn m-btn-green">
+                <span>смс</span>
+            </button>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Your(06.01.2021) 
+        </div>
+    </div>
+</td>
+
+    <td></td>
+    <td>
+        <fieldset class="fg">
+            <select>
+                <option>Холодный</option>
+                <option selected>Не заинтересовал </option>
+                <option>Не удалось связаться</option>
+                <option>Перезвонить позже</option>
+                <option>Сконвертирован</option>
+                <option>Некачественный лид</option>
+                <option>Разговора не было</option>
+                <option>Был в обработке/горячий</option>
+                <option>Передача клиента</option>
+                <option>Горячий</option>
+                <option>В обработке</option>
+            </select>
+        </fieldset>
+    </td>
+    <td>
+        <div class="country">
+            <div class="country__flag">
+                <img src="img/sp.webp" alt="">
+            </div>
+            <span class="country__title dark-text">ES</span>
+        </div>
+    </td>
+    <td>
+        <div class="td">
+            <button class="call-data m-btn m-btn-blue">
+                <img src="img/comment.png" alt="">
+                <span>Коментарий</span>
+            </button>
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            14.05.2021 15:20
+        </div>
+    </div>
+</td>
+
+    <td>
+        <fieldset class="fg">
+    <select>
+        <option selected>Email</option>
+        <option>Email2</option>
+        <option>Email3</option>
+    </select>
+</fieldset>
+
+    </td>
+    <td></td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            12.01.2021 18:32
+        </div>
+    </div>
+</td>
+
+    <td>
+        <div class="td">
+            <div class="td__title">
+                14.05.2021 15:20
+            </div>
+            <button class="td__remove">
+                <img src="img/remove.webp" alt="">
+            </button>
+        </div>
+    </td>
+</tr>
+<!--                          -->
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="action">
+                <div class="text12">Выбрано клиентов:</div>
+                <div class="action__num">
+                    <span class="text12 _selected-clients-count">0</span>
+                </div>
+                <fieldset class="fg action__select">
+                    <select>
+                        <option selected disabled>Выберите действие</option>
+                        <option>Назначить ответственного</option>
+                        <option>Изменить источник</option>
+                        <option>Установить статус</option>
+                    </select>
+                </fieldset>
+                <button class="action__btn m-btn m-btn-primary">
+                    <span>Отправить</span>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

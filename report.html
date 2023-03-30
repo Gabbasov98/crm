@@ -1,0 +1,948 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Отчет</title>
+</head>
+
+<body class="page">
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="sidebar__top">
+    <a href="" class="sidebar__logo">
+        <img src="img/logo.webp" alt="">
+    </a>
+    <a href="" class="sidebar__logout">
+        <img src="img/logout.webp" alt="">
+    </a>
+    <a href="" class="sidebar__note">
+        <img src="img/note.webp" alt="">
+        <span class="sidebar__note-num">1</span>
+    </a>
+    <a href="" class="sidebar__calendar">
+        <img src="img/calendar.webp" alt="">
+    </a>
+    <button class="burger"></button>
+</div>
+<nav class="nav">
+    <div class="nav__item">
+        <a href="" class="nav__link">
+            <i class="nav__icon">
+                <img src="img/user.webp" alt="">
+            </i>
+            <span>Клиенты</span>
+        </a>
+    </div>
+    <div class="nav__item">
+        <a href="" class="nav__link">
+            <i class="nav__icon">
+                <img src="img/settings.webp" alt="">
+            </i>
+            <span>Панель управления</span>
+        </a>
+    </div>
+    <div class="nav__item">
+        <div class="nav__show">
+            <i class="nav__icon">
+                <img src="img/shield.webp" alt="">
+            </i>
+            <span>Верификация</span>
+            <img src="img/arrow.webp" alt="" class="nav__arrow">
+        </div>
+        <div class="nav__hidden">
+            <div class="nav__sublinks">
+                <a href="" class="nav__sublink _active">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Верификация2</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="nav__item">
+        <div class="nav__show">
+            <i class="nav__icon">
+                <img src="img/marketing.webp" alt="">
+            </i>
+            <span>Маркетинг</span>
+            <img src="img/arrow.webp" alt="" class="nav__arrow">
+        </div>
+        <div class="nav__hidden">
+            <div class="nav__sublinks">
+                <a href="" class="nav__sublink _active">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Кампания</span>
+                </a>
+                <a href="" class="nav__sublink">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Лендинги</span>
+                </a>
+                <a href="" class="nav__sublink">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Отчет</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="nav__item">
+        <a href="" class="nav__link">
+            <i class="nav__icon">
+                <img src="img/banking.webp" alt="">
+            </i>
+            <span>Банкинг</span>
+        </a>
+    </div>
+    <div class="nav__item">
+        <div class="nav__show">
+            <i class="nav__icon">
+                <img src="img/account.webp" alt="">
+            </i>
+            <span>Аккаунты</span>
+            <img src="img/arrow.webp" alt="" class="nav__arrow">
+        </div>
+        <div class="nav__hidden">
+            <div class="nav__sublinks">
+                <a href="" class="nav__sublink _active">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Аккаунты 2</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="nav__item">
+        <a href="" class="nav__link">
+            <i class="nav__icon">
+                <img src="img/referal.webp" alt="">
+            </i>
+            <span>Рефералка</span>
+        </a>
+    </div>
+</nav>
+
+<!--Банкинг-->
+<!--Аккаунты-->
+
+        </aside>
+        <main class="content">
+
+            <div class="breadcrumbs">
+                <a href="" class="breadcrumbs__item">Панель управления</a>
+                <a href="" class="breadcrumbs__item">Маркетинг</a>
+                <span class="breadcrumbs__item">Отчет</span>
+            </div>
+
+            <div class="wrap report">
+                <div class="wrap__scroll">
+                    <div class="filter">
+    <a href="" class="filter__btn m-btn m-btn-primary">
+        <span>Все</span>
+    </a>
+    <div class="filter__group">
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Предыдущий год</span>
+        </a>
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Этот год</span>
+        </a>
+    </div>
+    <div class="filter__group">
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Предыдущий месяц</span>
+        </a>
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Этот месяц</span>
+        </a>
+    </div>
+    <div class="filter__group">
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Предыдущая неделя</span>
+        </a>
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Эта неделя</span>
+        </a>
+    </div>
+    <div class="filter__group">
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Вчера</span>
+        </a>
+        <a href="" class="filter__btn m-btn m-btn-primary">
+            <span>Сегодня</span>
+        </a>
+    </div>
+    <button class="date-btn">
+        <img src="img/calendar2.png" alt="">
+        <span>Выбрать дату периода</span>
+        <input class="date-input" type="text">
+    </button>
+</div>
+
+
+                    <div class="banking-fields">
+                        <fieldset class="fg">
+                            <input type="text" placeholder="ID Клиента, Имя, Телефон, Email">
+                        </fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Офис</option>
+        <option>Офис</option>
+        <option>Офис 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Кампания</option>
+        <option>Кампания</option>
+        <option>Кампания 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Партнерская сеть</option>
+        <option>Партнерская сеть</option>
+        <option>Партнерская сеть 2</option>
+    </select>
+</fieldset>
+
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Парт. иенеджер</option>
+        <option>Парт. иенеджер</option>
+        <option>Парт. иенеджер 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Менеджер</option>
+        <option>Менеджер</option>
+        <option>Менеджер 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Конв. Менеджер</option>
+        <option>Конв. Менеджер</option>
+        <option>Конв. Менеджер 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Менеджер Розн. торг.</option>
+        <option>Менеджер Розн. торг.</option>
+        <option>Менеджер Розн. торг. 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Команда</option>
+        <option>Команда</option>
+        <option>Команда 2</option>
+    </select>
+</fieldset>
+
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Страна</option>
+        <option>Страна</option>
+        <option>Страна 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Сайт</option>
+        <option>Сайт</option>
+        <option>Сайт 2</option>
+    </select>
+</fieldset>
+
+                        <fieldset class="fg">
+    <select>
+        <option selected disabled hidden>Источник</option>
+        <option>Источник</option>
+        <option>Источник 2</option>
+    </select>
+</fieldset>
+
+
+                    </div>
+
+                    <div class="banking-fields__buttons">
+                        <button class="banking-fields__btn m-btn m-btn-primary">
+                            <span>Применить выбранные фильтры</span>
+                        </button>
+                        <button class="banking-fields__btn m-btn m-btn-primary-outline">
+                            <img src="img/refresh.webp" alt="">
+                            <span>Сбросить фильтры</span>
+                        </button>
+                    </div>
+
+                    <div class="banking-nums">
+                        <div class="stat-card stat-card2" style="background: #fef7ee;">
+    <div class="stat-card__num">
+        66366
+    </div>
+    <div class="stat-card__title gray-text">
+        Холодные Лиды
+    </div>
+</div>
+
+                        <div class="stat-card stat-card2" style="background: #edfef5;">
+    <div class="stat-card__num">
+        57
+    </div>
+    <div class="stat-card__title gray-text">
+        Лиды
+    </div>
+</div>
+
+                        <div class="stat-card stat-card2" style="background: #fceceb;">
+    <div class="stat-card__num">
+        8
+    </div>
+    <div class="stat-card__title gray-text">
+        Неудачные Лиды
+    </div>
+</div>
+
+                        <div class="stat-card stat-card2" style="background: #c8d5d9;">
+    <div class="stat-card__num">
+        0%
+    </div>
+    <div class="stat-card__title gray-text">
+        LQ
+    </div>
+</div>
+
+                        <div class="stat-card stat-card2" style="background: #ebfdff;">
+    <div class="stat-card__num">
+        $ 2477467.73
+    </div>
+    <div class="stat-card__title gray-text">
+        Перекрестный депозит
+    </div>
+</div>
+
+                        <div class="stat-card stat-card2" style="background: #ebf2f0;">
+    <div class="stat-card__num">
+        $ 743693.93
+    </div>
+    <div class="stat-card__title gray-text">
+        Возврат
+    </div>
+</div>
+
+                        <div class="stat-card stat-card2" style="background: #f6dfcc;">
+    <div class="stat-card__num">
+        56
+    </div>
+    <div class="stat-card__title gray-text">
+        FTD
+    </div>
+</div>
+
+                        <div class="stat-card stat-card2" style="background: #f3eefe;">
+    <div class="stat-card__num">
+        98.24%
+    </div>
+    <div class="stat-card__title gray-text">
+        CR
+    </div>
+</div>
+
+                    </div>
+
+                    <div class="report-data">
+                    <div class="m-table__content">
+                        <div class="report-data__table m-table">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>
+    <div class="th">
+        <span class="th__title">
+            ID
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                    <th>
+    <div class="th">
+        <span class="th__title">
+            Статус
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                    <th>
+    <div class="th">
+        <span class="th__title">
+            Кампания
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                    <th>
+    <div class="th">
+        <span class="th__title">
+            Партнер
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                    <th>
+    <div class="th">
+        <span class="th__title">
+            Источник
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                    <th>
+    <div class="th">
+        <span class="th__title">
+            Сайт
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                    <th>
+    <div class="th">
+        <span class="th__title">
+            Страна
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                    <th>
+    <div class="th">
+        <span class="th__title">
+            FTD кЛИЕНТ
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                    <th>
+    <div class="th">
+        <span class="th__title">
+             пЕРВАЯ ДАТА ДЕПОЗИТА
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                    <th>
+    <div class="th">
+        <span class="th__title">
+            рЕГИСТРАЦИЯ
+        </span>
+        <button class="th__sort"></button>
+    </div>
+</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            68605
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Suspected Double leads
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Registered on CA
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Internal Affiliate
+        </div>
+    </div>
+</td>
+
+    <td></td>
+    <td>
+        <div class="td">
+            <div class="td__title">
+                <a href="">https://coinfuze.com</a>
+            </div>
+        </div>
+    </td>
+    <td>
+        <div class="country">
+            <div class="country__flag">
+                <img src="img/lv.webp" alt="">
+            </div>
+            <span class="country__title dark-text">LV</span>
+        </div>
+    </td>
+    <td>
+        <div class="report-status">
+            <img src="img/danger.png" alt="">
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            2022-12-03 3:05 PM
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            2022-12-03 2:25 PM
+        </div>
+    </div>
+</td>
+
+</tr>
+
+                                    <tr>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            68605
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Suspected Double leads
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Registered on CA
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Internal Affiliate
+        </div>
+    </div>
+</td>
+
+    <td></td>
+    <td>
+        <div class="td">
+            <div class="td__title">
+                <a href="">https://coinfuze.com</a>
+            </div>
+        </div>
+    </td>
+    <td>
+        <div class="country">
+            <div class="country__flag">
+                <img src="img/sp.webp" alt="">
+            </div>
+            <span class="country__title dark-text">ES</span>
+        </div>
+    </td>
+    <td>
+        <div class="report-status">
+            <img src="img/success.png" alt="">
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            2022-12-03 3:05 PM
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            2022-12-03 2:25 PM
+        </div>
+    </div>
+</td>
+
+</tr>
+
+                                    <tr>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            68605
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Suspected Double leads
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Registered on CA
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Internal Affiliate
+        </div>
+    </div>
+</td>
+
+    <td></td>
+    <td>
+        <div class="td">
+            <div class="td__title">
+                <a href="">https://coinfuze.com</a>
+            </div>
+        </div>
+    </td>
+    <td>
+        <div class="country">
+            <div class="country__flag">
+                <img src="img/lv.webp" alt="">
+            </div>
+            <span class="country__title dark-text">LV</span>
+        </div>
+    </td>
+    <td>
+        <div class="report-status">
+            <img src="img/danger.png" alt="">
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            2022-12-03 3:05 PM
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            2022-12-03 2:25 PM
+        </div>
+    </div>
+</td>
+
+</tr>
+
+                                    <tr>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            68605
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Suspected Double leads
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Registered on CA
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Internal Affiliate
+        </div>
+    </div>
+</td>
+
+    <td></td>
+    <td>
+        <div class="td">
+            <div class="td__title">
+                <a href="">https://coinfuze.com</a>
+            </div>
+        </div>
+    </td>
+    <td>
+        <div class="country">
+            <div class="country__flag">
+                <img src="img/sp.webp" alt="">
+            </div>
+            <span class="country__title dark-text">ES</span>
+        </div>
+    </td>
+    <td>
+        <div class="report-status">
+            <img src="img/success.png" alt="">
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            2022-12-03 3:05 PM
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            2022-12-03 2:25 PM
+        </div>
+    </div>
+</td>
+
+</tr>
+
+                                    <tr>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            68605
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Suspected Double leads
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Registered on CA
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Internal Affiliate
+        </div>
+    </div>
+</td>
+
+    <td></td>
+    <td>
+        <div class="td">
+            <div class="td__title">
+                <a href="">https://coinfuze.com</a>
+            </div>
+        </div>
+    </td>
+    <td>
+        <div class="country">
+            <div class="country__flag">
+                <img src="img/lv.webp" alt="">
+            </div>
+            <span class="country__title dark-text">LV</span>
+        </div>
+    </td>
+    <td>
+        <div class="report-status">
+            <img src="img/danger.png" alt="">
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            2022-12-03 3:05 PM
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            2022-12-03 2:25 PM
+        </div>
+    </div>
+</td>
+
+</tr>
+
+                                    <tr>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            68605
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Suspected Double leads
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Registered on CA
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            Internal Affiliate
+        </div>
+    </div>
+</td>
+
+    <td></td>
+    <td>
+        <div class="td">
+            <div class="td__title">
+                <a href="">https://coinfuze.com</a>
+            </div>
+        </div>
+    </td>
+    <td>
+        <div class="country">
+            <div class="country__flag">
+                <img src="img/sp.webp" alt="">
+            </div>
+            <span class="country__title dark-text">ES</span>
+        </div>
+    </td>
+    <td>
+        <div class="report-status">
+            <img src="img/success.png" alt="">
+        </div>
+    </td>
+    <td>
+    <div class="td">
+        <div class="td__title">
+            2022-12-03 3:05 PM
+        </div>
+    </div>
+</td>
+
+    <td>
+    <div class="td">
+        <div class="td__title">
+            2022-12-03 2:25 PM
+        </div>
+    </div>
+</td>
+
+</tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="m-table__bottom">
+    <div class="text12 dark-text">
+        Показать 1 по 4 с 333
+    </div>
+    <div class="pagination">
+        <button class="pagination__btn">
+            <img src="img/prev.webp" alt="">
+        </button>
+        <div class="pagination__nums">
+            <button class="pagination__num _active">
+                <span>1</span>
+            </button>
+            <button class="pagination__num">
+                <span>2</span>
+            </button>
+            <button class="pagination__num">
+                <span>3</span>
+            </button>
+            <button class="pagination__num">
+                <span>4</span>
+            </button>
+            <button class="pagination__num">
+                <span>5</span>
+            </button>
+            <button class="pagination__num">
+                <span>23</span>
+            </button>
+        </div>
+        <button class="pagination__btn">
+            <img src="img/next.webp" alt="">
+        </button>
+    </div>
+</div>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
