@@ -51,6 +51,9 @@
         <a href="stat.html" style="display: block; margin-bottom: 20px;">
             Статистика
         </a>
+        <a href="accounts.html" style="display: block; margin-bottom: 20px;">
+            Аккаунты
+        </a>
 
 
 
@@ -65,6 +68,14 @@
         <br>
         <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="channelModal">
             Добавить канал трафика и генерацию токена
+        </button>
+        <br>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="editAccount">
+            Редактировать Аккаунт
+        </button>
+        <br>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="addAccount">
+            Добавить новый Аккаунт
         </button>
 
     </div>
@@ -813,6 +824,184 @@
                 </div>
             </div>
         </div>
+
+    </div>
+</div>
+
+<div class="modal edit-modal" id="editAccount">
+    <div class="modal__bg _close-modal"></div>
+    <div class="modal__dialog">
+        <div class="channel-modal__wrap">
+    <button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.66797 2L12.3346 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+            <path d="M12.3359 2L1.66927 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+        </svg>
+    </button>
+    <div class="edit-modal__title">
+        Редактировать Аккаунт
+    </div>
+    <div class="edit-modal__form">
+        <div class="edit-modal__grid">
+            <fieldset class="fg">
+    
+    <label>Имя</label>
+    <input type="text" placeholder="Имя">
+</fieldset>
+
+            <fieldset class="fg">
+    
+    <label>Фамилия</label>
+    <input type="text" placeholder="Фамилия">
+</fieldset>
+
+            <fieldset class="fg _full">
+                <label>Электронная почта</label>
+                <input type="email">
+            </fieldset>
+            <fieldset class="fg _full">
+                <label>Пароль</label>
+                <input type="password">
+            </fieldset>
+        </div>
+
+        <div class="edit-modal__tabs tabs-parent">
+            <div class="tabs">
+                <div class="tab _active" data-tab="role">
+                    <span>Роль / Офис / Команда</span>
+                </div>
+                <div class="tab" data-tab="calls">
+                    <span>Звонки / Собщения</span>
+                </div>
+            </div>
+            <div class="edit-modal__content">
+                <div class="tab-content tab-role _active">
+                    <div class="edit-modal__grid2">
+                        <fieldset class="fg">
+    
+    <label>Роли</label>
+    <select>
+        <option selected>Conversion manager</option>
+        <option>Conversion manager 2</option>
+        <option>Conversion manager 3</option>
+    </select>
+</fieldset>
+
+
+                        <fieldset class="fg">
+                            <label>Дополнительные роли</label>
+                            <select class="tag-select"  multiple="multiple">
+                                <option>Compliance Manager</option>
+                                <option>Compliance Manager 2</option>
+                                <option>Compliance Manager 3</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="tab-content tab-calls">
+                    Звонки / Собщения
+                </div>
+            </div>
+        </div>
+        <div class="modal__nav">
+            <button class="modal__btn m-btn m-btn-primary">
+                <span>Сохранить</span>
+            </button>
+            <button class="_close-modal modal__btn m-btn m-btn-red-outline">
+                <span>Отменить</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<div class="modal edit-modal" id="addAccount">
+    <div class="modal__bg _close-modal"></div>
+    <div class="modal__dialog">
+        <div class="channel-modal__wrap">
+    <button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.66797 2L12.3346 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+            <path d="M12.3359 2L1.66927 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+        </svg>
+    </button>
+    <div class="edit-modal__title">
+        Добавить новый Аккаунт
+    </div>
+    <div class="edit-modal__form">
+        <div class="edit-modal__grid">
+            <fieldset class="fg">
+    
+    <label>Имя</label>
+    <input type="text" placeholder="Имя">
+</fieldset>
+
+            <fieldset class="fg">
+    
+    <label>Фамилия</label>
+    <input type="text" placeholder="Фамилия">
+</fieldset>
+
+            <fieldset class="fg _full">
+                <label>Электронная почта</label>
+                <input type="email">
+            </fieldset>
+            <fieldset class="fg _full">
+                <label>Пароль</label>
+                <input type="password">
+            </fieldset>
+        </div>
+
+        <div class="edit-modal__tabs tabs-parent">
+            <div class="tabs">
+                <div class="tab _active" data-tab="role">
+                    <span>Роль / Офис / Команда</span>
+                </div>
+                <div class="tab" data-tab="calls">
+                    <span>Звонки / Собщения</span>
+                </div>
+            </div>
+            <div class="edit-modal__content">
+                <div class="tab-content tab-role _active">
+                    <div class="edit-modal__grid2">
+                        <fieldset class="fg">
+    
+    <label>Роли</label>
+    <select>
+        <option selected>Conversion manager</option>
+        <option>Conversion manager 2</option>
+        <option>Conversion manager 3</option>
+    </select>
+</fieldset>
+
+
+                        <fieldset class="fg">
+                            <label>Дополнительные роли</label>
+                            <select class="tag-select"  multiple="multiple">
+                                <option>Compliance Manager</option>
+                                <option>Compliance Manager 2</option>
+                                <option>Compliance Manager 3</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="tab-content tab-calls">
+                    Звонки / Собщения
+                </div>
+            </div>
+        </div>
+        <div class="modal__nav">
+            <button class="modal__btn m-btn m-btn-primary">
+                <span>Сохранить</span>
+            </button>
+            <button class="_close-modal modal__btn m-btn m-btn-red-outline">
+                <span>Отменить</span>
+            </button>
+        </div>
+    </div>
+</div>
 
     </div>
 </div>

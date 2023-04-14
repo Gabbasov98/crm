@@ -20,14 +20,73 @@
     <a href="" class="sidebar__logout">
         <img src="img/logout.webp" alt="">
     </a>
-    <a href="" class="sidebar__note">
+    <button class="sidebar__note _open-notifications">
         <img src="img/note.webp" alt="">
         <span class="sidebar__note-num">1</span>
-    </a>
-    <a href="" class="sidebar__calendar">
+    </button>
+    <button class="sidebar__calendar">
         <img src="img/calendar.webp" alt="">
-    </a>
+        <input type="text" class="date-input-single">
+    </button>
     <button class="burger"></button>
+    <div class="notifications">
+        <div class="notifications__items">
+        <div class="notification-card">
+    <div class="notification-card__title">
+        Команды и лиды
+    </div>
+    <div class="notification-card__desc text12">
+        Добавлено <span>100</span> горячих лидов, ответственный <a href=''>Dima St</a>
+    </div>
+    <div class="notification-card__date text12">
+        2023.04.13 12:45 PM
+    </div>
+</div>
+
+        <div class="notification-card">
+    <div class="notification-card__title">
+        Вывод DWA
+    </div>
+    <div class="notification-card__desc text12">
+        Тимлидет <a href=''>Dima St</a> осуществлен вывод USD 450,00 на счет 1301382564 клиента Dmitriy Tagiltsev [Lead ID: 50449]
+    </div>
+    <div class="notification-card__date text12">
+        2023.04.13 12:43 PM
+    </div>
+</div>
+
+        <div class="notification-card">
+    <div class="notification-card__title">
+        Депозит DWA
+    </div>
+    <div class="notification-card__desc text12">
+        Тимлидет <a href=''>Arkaiy Arkadiy</a> осуществлен депозит USD 750,00 на счет 1301382061 клиента Jyrij Kurashov [Lead ID: 25753]
+    </div>
+    <div class="notification-card__date text12">
+        2023.04.13 12:41 PM
+    </div>
+</div>
+
+        <div class="notification-card">
+    <div class="notification-card__title">
+        Депозит DWA
+    </div>
+    <div class="notification-card__desc text12">
+        Тимлидет <a href=''>Arkaiy Arkadiy</a> осуществлен депозит USD 750,00 на счет 1301382061 клиента Jyrij Kurashov [Lead ID: 25753]
+    </div>
+    <div class="notification-card__date text12">
+        2023.04.13 12:41 PM
+    </div>
+</div>
+
+        </div>
+        <div class="notifications__nav">
+            <a href="" class="m-btn m-btn-primary">
+                <span>Читать все уведомления</span>
+            </a>
+        </div>
+    </div>
+    <div class="notifications__bg"></div>
 </div>
 <nav class="nav">
     <div class="nav__item">
@@ -106,9 +165,13 @@
         </div>
         <div class="nav__hidden">
             <div class="nav__sublinks">
-                <a href="" class="nav__sublink _active">
+                <a href="" class="nav__sublink">
                     <span class="nav__sublink-icon"></span>
-                    <span class="nav__sublink-text">Аккаунты 2</span>
+                    <span class="nav__sublink-text">Команды</span>
+                </a>
+                <a href="" class="nav__sublink">
+                    <span class="nav__sublink-icon"></span>
+                    <span class="nav__sublink-text">Аккаунты</span>
                 </a>
             </div>
         </div>
@@ -119,6 +182,14 @@
                 <img src="img/referal.webp" alt="">
             </i>
             <span>Рефералка</span>
+        </a>
+    </div>
+    <div class="nav__item">
+        <a href="" class="nav__link">
+            <i class="nav__icon">
+                <img src="img/stat-icon.webp" alt="">
+            </i>
+            <span>Статистика</span>
         </a>
     </div>
 </nav>
