@@ -77,6 +77,30 @@
         <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="addAccount">
             Добавить новый Аккаунт
         </button>
+        <br>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="errorModal">
+            Ошибка!
+        </button>
+        <br>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="successModal">
+            Сохранение успешно!
+        </button>
+        <br>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="successModal2">
+            Удаление успешно!
+        </button>
+        <br>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="dangerModal">
+            Вы действительно хотите сделать это?
+        </button>
+        <br>
+        <button data-title="Идет сохранение" class="_show-loader" style="border: 2px solid #000;margin-bottom: 20px;">
+            Идет сохранение
+        </button>
+        <br>
+        <button data-title="Идет удаление аккаунта" class="_show-loader" style="border: 2px solid #000;margin-bottom: 20px;">
+            Идет удаление аккаунта
+        </button>
 
     </div>
 
@@ -1003,6 +1027,125 @@
     </div>
 </div>
 
+    </div>
+</div>
+
+
+<div class="loader">
+    <div class="loader__inner">
+        <div class="loader__img">
+            <img src="img/loader.webp" alt="">
+        </div>
+        <div class="loader__info">
+            <span class="loader__text">
+
+            </span>
+            <span class="dot" style="animation-delay: 0s"> .</span>
+            <span class="dot" style="animation-delay: .3s"> .</span>
+            <span class="dot" style="animation-delay: .6s"> .</span>
+        </div>
+    </div>
+</div>
+
+<div class="modal info-modal" id="errorModal">
+    <div class="modal__bg _close-modal"></div>
+    <div class="modal__dialog">
+        <button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.66797 2L12.3346 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+                <path d="M12.3359 2L1.66927 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+            </svg>
+        </button>
+        <img src="img/error.webp" alt="" class="info-modal__img">
+        <div class="info-modal__text">
+            <div class="info-modal__title">
+                Ошибка!
+            </div>
+            <div class="info-modal__desc">
+                Произошла ошибка, не удалось сохранить изменения
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal info-modal" id="successModal">
+    <div class="modal__bg _close-modal"></div>
+    <div class="modal__dialog">
+        <button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.66797 2L12.3346 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+                <path d="M12.3359 2L1.66927 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+            </svg>
+        </button>
+        <img src="img/success2.webp" alt="" class="info-modal__img">
+        <div class="info-modal__text">
+            <div class="info-modal__title">
+                Сохранение успешно!
+            </div>
+            <div class="info-modal__desc">
+                Ваши изменения были сохранены успешно
+            </div>
+        </div>
+        <div class="info-modal__nav">
+            <button class="info-modal__btn m-btn m-btn-primary">
+                <span>Принять</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal info-modal" id="successModal2">
+    <div class="modal__bg _close-modal"></div>
+    <div class="modal__dialog">
+        <button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.66797 2L12.3346 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+                <path d="M12.3359 2L1.66927 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+            </svg>
+        </button>
+        <img src="img/success2.webp" alt="" class="info-modal__img">
+        <div class="info-modal__text">
+            <div class="info-modal__title">
+                Удаление успешно!
+            </div>
+            <div class="info-modal__desc">
+                Вы выполнели успешное удаление
+            </div>
+        </div>
+        <div class="info-modal__nav">
+            <button class="info-modal__btn m-btn m-btn-primary">
+                <span>Принять</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal info-modal" id="dangerModal">
+    <div class="modal__bg _close-modal"></div>
+    <div class="modal__dialog">
+        <button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.66797 2L12.3346 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+                <path d="M12.3359 2L1.66927 12.6667" stroke="#6e6b7b" stroke-width="3"/>
+            </svg>
+        </button>
+        <img src="img/danger2.webp" alt="" class="info-modal__img">
+        <div class="info-modal__text">
+            <div class="info-modal__title">
+                Вы действительно хотите сделать это?
+            </div>
+            <div class="info-modal__desc">
+                Вы не сможете восстановить этот файл!
+            </div>
+        </div>
+        <div class="info-modal__nav">
+            <button class="info-modal__btn m-btn m-btn-primary">
+                <span>Да, удалить!</span>
+            </button>
+            <button class="info-modal__btn m-btn m-btn-red-outline">
+                <span>Отменить</span>
+            </button>
+        </div>
     </div>
 </div>
 
